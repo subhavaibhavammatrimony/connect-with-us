@@ -7,7 +7,7 @@
 <link rel="icon" href="logo.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Playfair+Display:wght@600;700;800&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Cinzel:wght@600;700;800&display=swap" rel="stylesheet">
 
 <style>
 :root{
@@ -26,7 +26,7 @@
 html{scroll-behavior:smooth}
 body{
   min-height:100vh;
-  font-family:Poppins,Arial,sans-serif;
+  font-family:"DM Sans",Arial,sans-serif;
   color:var(--text);
   background:
     radial-gradient(circle at 15% 10%,rgba(189,141,39,.12),transparent 25%),
@@ -88,16 +88,15 @@ body:after{
   width:clamp(105px,12vw,165px);
   height:auto;
   filter:drop-shadow(0 13px 22px rgba(50,7,13,.25));
-  animation:floatLogo 4s ease-in-out infinite;
+  
 }
-@keyframes floatLogo{
-  0%,100%{transform:translateY(0)}
+
   50%{transform:translateY(-5px)}
 }
 .brand{
   white-space:nowrap;
   margin-top:16px;
-  font-family:"Playfair Display",Georgia,serif;
+  font-family:"Cinzel",Georgia,serif;
   font-weight:800;
   font-size:clamp(2.45rem,4.35vw,5.2rem);
   line-height:.94;
@@ -107,7 +106,7 @@ body:after{
 .subtitle{
   margin-top:14px;
   color:var(--maroon);
-  font-family:"Cormorant Garamond",Georgia,serif;
+  font-family:"Cinzel",Georgia,serif;
   font-size:clamp(1.25rem,2vw,1.8rem);
   font-weight:700;
   letter-spacing:1px;
@@ -144,7 +143,7 @@ body:after{
 }
 .trust-item{
   color:var(--maroon);
-  font-family:"Cormorant Garamond",Georgia,serif;
+  font-family:"Cinzel",Georgia,serif;
   font-size:clamp(.95rem,1.4vw,1.2rem);
   font-weight:700;
   line-height:1.05;
@@ -183,19 +182,13 @@ body:after{
 }
 .event h2{
   margin:5px 0 3px;
-  font-family:"Playfair Display",Georgia,serif;
+  font-family:"Cinzel",Georgia,serif;
   font-size:clamp(1.35rem,2.2vw,2rem);
 }
 .event-desc{
   font-size:.72rem;
   color:#fff4dc;
   margin-bottom:13px;
-}
-.event-grid{
-  display:grid;
-  grid-template-columns:1.15fr .85fr;
-  gap:11px;
-  text-align:left;
 }
 .event-box{
   display:flex;
@@ -205,11 +198,6 @@ body:after{
   border-radius:14px;
   border:1px solid rgba(240,205,120,.9);
   background:rgba(255,248,225,.10);
-}
-.event-box.date{
-  background:linear-gradient(135deg,#ffe7a7,#efc85e);
-  color:#4b0a10;
-  box-shadow:0 5px 15px rgba(255,214,104,.15);
 }
 .event-icon{font-size:25px;line-height:1}
 .event-box small{
@@ -351,7 +339,7 @@ body:after{
 }
 .event-calendar strong{
   display:block;
-  font-family:"Playfair Display",Georgia,serif;
+  font-family:"Cinzel",Georgia,serif;
   font-size:38px;line-height:.95;
   margin:2px 0 1px;
 }
@@ -366,7 +354,7 @@ body:after{
 .event-date-copy strong{
   display:block;
   color:#fff7df;
-  font-family:"Playfair Display",Georgia,serif;
+  font-family:"Cinzel",Georgia,serif;
   font-size:clamp(1.05rem,1.6vw,1.35rem);
   line-height:1.05;margin:2px 0 4px;
 }
@@ -422,7 +410,7 @@ body:after{
 .right-title{
   color:var(--maroon);
   text-align:center;
-  font-family:"Playfair Display",Georgia,serif;
+  font-family:"Cinzel",Georgia,serif;
   font-size:clamp(2rem,3.7vw,3.4rem);
   line-height:1.03;
 }
@@ -430,7 +418,7 @@ body:after{
   margin:8px 0 20px;
   text-align:center;
   color:#75686a;
-  font-family:"Cormorant Garamond",Georgia,serif;
+  font-family:"Cinzel",Georgia,serif;
   font-size:clamp(1rem,1.5vw,1.25rem);
   font-style:italic;
 }
@@ -476,7 +464,7 @@ body:after{
 .link-text b{
   display:block;
   color:var(--maroon);
-  font-family:"Cormorant Garamond",Georgia,serif;
+  font-family:"Cinzel",Georgia,serif;
   font-size:1.2rem;
   line-height:1.08;
 }
@@ -530,7 +518,7 @@ body:after{
 .location b{
   display:block;
   color:var(--maroon);
-  font-family:"Cormorant Garamond",Georgia,serif;
+  font-family:"Cinzel",Georgia,serif;
   font-size:1.25rem;
 }
 .location span{
@@ -551,12 +539,43 @@ body:after{
   color:#fff1d0;
   background:linear-gradient(180deg,#640813,#570711);
   border-top:4px solid #d8aa40;
-  font-family:"Cormorant Garamond",Georgia,serif;
+  font-family:"Cinzel",Georgia,serif;
   font-size:1.05rem;
   font-style:italic;
   letter-spacing:1px;
   text-align:center;
 }
+
+
+/* FINAL ELITE EVENT GRAPHICS */
+.event{position:relative;isolation:isolate;overflow:visible;animation:eventGlow 2.4s ease-in-out infinite}
+.event:before{content:"";position:absolute;inset:-4px;border-radius:25px;border:2px solid rgba(239,210,125,.72);pointer-events:none;z-index:-1;animation:eventRing 2.4s ease-in-out infinite}
+.event:after{content:"";position:absolute;width:100px;height:100px;right:-34px;top:-38px;border-radius:50%;background:radial-gradient(circle,rgba(255,224,132,.34),rgba(255,224,132,0) 70%);pointer-events:none;animation:eventOrb 2.8s ease-in-out infinite}
+.event-label{display:inline-flex;align-items:center;justify-content:center;gap:7px;padding:5px 13px;border-radius:999px;background:linear-gradient(90deg,rgba(255,219,119,.12),rgba(255,255,255,.08),rgba(255,219,119,.12));border:1px solid rgba(246,217,125,.62);animation:eventBlink 1.6s ease-in-out infinite}
+.live-dot{width:8px;height:8px;border-radius:50%;background:#ffdb65;animation:livePulse 1.2s infinite}
+.spark{color:#fff4bd;font-size:14px;animation:sparkle 1.4s ease-in-out infinite}
+.event-highlight{display:flex;align-items:center;justify-content:center;gap:14px;margin:5px auto 2px;padding:9px;border-radius:17px;background:linear-gradient(135deg,rgba(255,255,255,.10),rgba(255,226,133,.08));border:1px solid rgba(239,210,125,.46)}
+.event-calendar{width:104px;min-width:104px;padding:7px 8px 8px;border-radius:14px;text-align:center;color:#4b0a10;background:linear-gradient(145deg,#ffe9a9,#efc45a);box-shadow:0 8px 18px rgba(255,213,100,.24);position:relative;display:flex;flex-direction:column;align-items:center;justify-content:center;animation:datePulse 2.1s ease-in-out infinite}
+.event-calendar:after{content:"";position:absolute;inset:-4px;border:1px solid rgba(255,228,151,.7);border-radius:17px;animation:dateRing 2.1s ease-in-out infinite}
+.calendar-top{display:block;font-size:8px;letter-spacing:1.8px;font-weight:800}
+.event-calendar strong{display:block;font-family:"Cinzel",Georgia,serif;font-size:42px;line-height:.84;margin:4px 0 2px}
+.event-calendar span:last-of-type{display:block;font-size:11px;letter-spacing:2px;font-weight:800}
+.event-calendar small{display:block;font-size:10px;font-weight:700;letter-spacing:1px}
+.event-date-copy{text-align:left}
+.event-day{display:block;color:#f6d97d;font-size:9px;letter-spacing:2.5px;font-weight:800}
+.event-date-copy strong{display:block;color:#fff7df;font-family:"Cinzel",Georgia,serif;font-size:clamp(1.15rem,1.7vw,1.4rem);line-height:1.05;margin:2px 0 4px}
+.event-date-copy small{display:block;color:#fff1d5;font-size:.63rem;line-height:1.3;max-width:230px}
+.phone{background:#7b1322}
+.icon i,.location-icon i{line-height:1}
+@keyframes eventGlow{0%,100%{box-shadow:0 14px 30px rgba(68,6,13,.24),0 0 0 rgba(239,210,125,0)}50%{box-shadow:0 17px 38px rgba(68,6,13,.30),0 0 28px rgba(239,210,125,.25)}}
+@keyframes eventRing{0%,100%{opacity:.35;transform:scale(1)}50%{opacity:1;transform:scale(1.012)}}
+@keyframes eventOrb{0%,100%{opacity:.35;transform:scale(.9)}50%{opacity:1;transform:scale(1.12)}}
+@keyframes eventBlink{0%,100%{opacity:.72}50%{opacity:1}}
+@keyframes livePulse{0%{box-shadow:0 0 0 0 rgba(255,219,101,.75)}70%{box-shadow:0 0 0 8px rgba(255,219,101,0)}100%{box-shadow:0 0 0 0 rgba(255,219,101,0)}}
+@keyframes sparkle{0%,100%{transform:scale(.75) rotate(0);opacity:.55}50%{transform:scale(1.25) rotate(25deg);opacity:1}}
+@keyframes datePulse{0%,100%{transform:scale(1)}50%{transform:scale(1.035)}}
+@keyframes dateRing{0%,100%{opacity:.35;transform:scale(1)}50%{opacity:1;transform:scale(1.04)}}
+@media(prefers-reduced-motion:reduce){.event,.event:before,.event:after,.event-label,.live-dot,.spark,.event-calendar,.event-calendar:after{animation:none!important}}
 
 /* TABLET */
 @media(max-width:980px){
@@ -607,12 +626,22 @@ body:after{
   .event-label{font-size:.52rem;letter-spacing:2.4px}
   .event h2{font-size:1.08rem;margin:4px 0 2px}
   .event-desc{font-size:.56rem;margin-bottom:8px}
-  .event-grid{grid-template-columns:1fr 1fr;gap:6px}
   .event-box{padding:7px 7px;gap:6px;border-radius:11px}
   .event-icon{font-size:17px}
   .event-box small{font-size:.41rem}
   .event-box strong{font-size:.61rem}
   .event-place{font-size:.5rem;margin-top:7px}
+
+  .event-highlight{gap:8px;padding:7px}
+  .event-calendar{width:76px;min-width:76px;padding:6px 4px;border-radius:11px}
+  .calendar-top{font-size:6px;letter-spacing:1px}
+  .event-calendar strong{font-size:29px;line-height:.84}
+  .event-calendar span:last-of-type{font-size:7px;letter-spacing:1px}
+  .event-calendar small{font-size:7px}
+  .event-day{font-size:6.8px;letter-spacing:1.3px}
+  .event-date-copy strong{font-size:.9rem}
+  .event-date-copy small{font-size:.5rem;max-width:180px}
+
   .right-title{font-size:1.55rem}
   .right-tag{font-size:.74rem;margin:4px 0 10px}
   .links{grid-template-columns:1fr;gap:8px}
@@ -641,6 +670,101 @@ body:after{
   .link{min-height:60px}
 }
 </style>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+<style id="final-brand-event-fix">
+.brand{
+  font-family:"Cinzel",Georgia,serif !important;
+  font-weight:700 !important;
+  white-space:nowrap !important;
+  letter-spacing:.035em !important;
+  line-height:1.02 !important;
+  text-transform:none !important;
+  text-shadow:0 1px 0 rgba(255,255,255,.65),0 3px 12px rgba(96,45,18,.10);
+}
+.event-calendar{
+  box-sizing:border-box !important;
+  width:104px !important;
+  min-width:104px !important;
+  height:104px !important;
+  padding:9px 7px 8px !important;
+  display:grid !important;
+  grid-template-rows:auto 1fr auto auto !important;
+  align-items:center !important;
+  justify-items:center !important;
+  gap:0 !important;
+  overflow:hidden !important;
+}
+.event-calendar .calendar-top{
+  display:block !important;
+  font-size:7px !important;
+  line-height:1 !important;
+  letter-spacing:1.55px !important;
+  white-space:nowrap !important;
+}
+.event-calendar .calendar-day{
+  display:flex !important;
+  align-items:center !important;
+  justify-content:center !important;
+  font-family:"Cinzel",Georgia,serif !important;
+  font-size:34px !important;
+  font-weight:800 !important;
+  line-height:1 !important;
+  height:100% !important;
+  margin:0 !important;
+}
+.event-calendar .calendar-month{
+  display:block !important;
+  font-family:"DM Sans",Arial,sans-serif !important;
+  font-size:10px !important;
+  font-weight:800 !important;
+  line-height:1 !important;
+  letter-spacing:2px !important;
+}
+.event-calendar .calendar-year{
+  display:block !important;
+  font-family:"DM Sans",Arial,sans-serif !important;
+  font-size:8px !important;
+  font-weight:700 !important;
+  line-height:1 !important;
+  letter-spacing:1.5px !important;
+  margin-top:2px !important;
+}
+.event-date-copy{min-width:0}
+.event-date-copy strong{
+  font-family:"Cinzel",Georgia,serif !important;
+  font-weight:700 !important;
+}
+@media(max-width:600px){
+  .brand{
+    font-size:clamp(2rem,9vw,3rem) !important;
+    letter-spacing:.02em !important;
+  }
+  .event-calendar{
+    width:76px !important;
+    min-width:76px !important;
+    height:82px !important;
+    padding:6px 4px !important;
+  }
+  .event-calendar .calendar-top{font-size:5px !important;letter-spacing:1px !important}
+  .event-calendar .calendar-day{font-size:27px !important}
+  .event-calendar .calendar-month{font-size:7px !important;letter-spacing:1.2px !important}
+  .event-calendar .calendar-year{font-size:6px !important;letter-spacing:1px !important}
+}
+</style>
+
+
+<style id="brand-color-fix">
+.brand{
+  color:#B8860B !important;
+  -webkit-text-fill-color:#B8860B !important;
+  text-shadow:
+    0 1px 0 rgba(255,245,210,.85),
+    0 2px 0 rgba(126,83,10,.28),
+    0 5px 14px rgba(123,19,34,.12) !important;
+}
+</style>
+
 </head>
 
 <body>
@@ -678,18 +802,19 @@ body:after{
       <span class="spark">✦</span>
     </div>
     <h2>Mangala Sandhippu — Elite Edition</h2>
-    <div class="event-desc">A Premium Matrimonial &amp; Wedding Services Gathering</div>
+    <div class="event-desc">We warmly welcome Doctors, NRIs, HNIs &amp; elite families to be part of this exclusive matrimonial gathering.</div>
 
     <div class="event-highlight">
       <div class="event-calendar">
         <span class="calendar-top">EVENT DATE</span>
-        <strong>03</strong>
-        <span>OCTOBER 2026</span>
+        <span class="calendar-day">03</span>
+        <span class="calendar-month">OCT</span>
+        <span class="calendar-year">2026</span>
       </div>
       <div class="event-date-copy">
-        <span class="event-day">SATURDAY</span>
+        <span class="event-day">SATURDAY • 03 OCTOBER 2026</span>
         <strong>Save the Date</strong>
-        <small>Join us for a meaningful Elite Mangala Sandhippu</small>
+        <small>Meet meaningful connections in an elegant, curated matrimonial setting.</small>
       </div>
     </div>
     <div class="event-place">📍 Green Meadows Resort, Palavakkam, Chennai</div>
@@ -701,51 +826,58 @@ body:after{
   <div class="right-tag">Let’s stay connected for a brighter tomorrow</div>
 
   <div class="links">
-    <a class="link" href="https://www.subhavaibhavammatrimony.com/" target="_blank" rel="noopener">
-      <span class="icon website">⌂</span>
-      <span class="link-text"><b>Visit Our Website</b><span>Know more about us</span></span>
+
+    <a class="link" href="tel:+917338812870">
+      <span class="icon phone"><i class="fa-solid fa-phone"></i></span>
+      <span class="link-text"><b>Call Us</b><span>73388 12870</span></span>
       <span class="arrow">›</span>
     </a>
 
     <a class="link" href="https://wa.me/7338812870" target="_blank" rel="noopener">
-      <span class="icon whatsapp">◉</span>
-      <span class="link-text"><b>Chat on WhatsApp</b><span>Quick Support</span></span>
+      <span class="icon whatsapp"><i class="fa-brands fa-whatsapp"></i></span>
+      <span class="link-text"><b>WhatsApp</b><span>Quick Support</span></span>
       <span class="arrow">›</span>
     </a>
 
     <a class="link" href="https://www.instagram.com/subhavaibhavam.matrimony?igsh=MTkzYmd0dnlmM2h5Mg==" target="_blank" rel="noopener">
-      <span class="icon instagram">◎</span>
-      <span class="link-text"><b>Follow Us on Instagram</b><span>Updates &amp; Moments</span></span>
+      <span class="icon instagram"><i class="fa-brands fa-instagram"></i></span>
+      <span class="link-text"><b>Instagram</b><span>Updates &amp; Moments</span></span>
       <span class="arrow">›</span>
     </a>
 
     <a class="link" href="https://www.facebook.com/share/1DRHEG2kVW/" target="_blank" rel="noopener">
-      <span class="icon facebook">f</span>
-      <span class="link-text"><b>Like Us on Facebook</b><span>Community &amp; Events</span></span>
+      <span class="icon facebook"><i class="fa-brands fa-facebook-f"></i></span>
+      <span class="link-text"><b>Facebook</b><span>Community &amp; Events</span></span>
       <span class="arrow">›</span>
     </a>
 
     <a class="link" href="https://youtube.com/@subhavaibhavammatrimonyservice?si=xlFRScRovMbwLMcN" target="_blank" rel="noopener">
-      <span class="icon youtube">▶</span>
-      <span class="link-text"><b>Watch on YouTube</b><span>Videos &amp; Stories</span></span>
+      <span class="icon youtube"><i class="fa-brands fa-youtube"></i></span>
+      <span class="link-text"><b>YouTube</b><span>Videos &amp; Stories</span></span>
+      <span class="arrow">›</span>
+    </a>
+
+    <a class="link" href="https://www.subhavaibhavammatrimony.com/" target="_blank" rel="noopener">
+      <span class="icon website"><i class="fa-solid fa-globe"></i></span>
+      <span class="link-text"><b>Website</b><span>Know more about us</span></span>
       <span class="arrow">›</span>
     </a>
 
     <a class="link" href="mailto:subhavaibhavam2026@gmail.com">
-      <span class="icon email">✉</span>
-      <span class="link-text"><b>Send us an Email</b><span>We’re here to help</span></span>
+      <span class="icon email"><i class="fa-solid fa-envelope"></i></span>
+      <span class="link-text"><b>Email</b><span>We’re here to help</span></span>
       <span class="arrow">›</span>
     </a>
 
     <a class="link register" href="https://forms.gle/m1JhKe1owsct2RPr6" target="_blank" rel="noopener">
-      <span class="icon">✎</span>
+      <span class="icon"><i class="fa-solid fa-pen-to-square"></i></span>
       <span class="link-text"><b>Register for Elite Mangala Sandhippu</b><span>Be a Part of a Meaningful Gathering</span></span>
       <span class="arrow">›</span>
     </a>
   </div>
 
   <a class="location" href="https://share.google/EKn9E3uzwitrIOtQQ" target="_blank" rel="noopener">
-    <span class="location-icon">●</span>
+    <span class="location-icon"><i class="fa-solid fa-location-dot"></i></span>
     <span>
       <b>Event Location</b>
       <span>Green Meadows Resort, Palavakkam, Chennai<br>Tap to open in Google Maps</span>
